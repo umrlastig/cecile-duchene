@@ -14,11 +14,11 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i">
   <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="vendor/academicons/css/academicons.min.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
 
   <!-- Custom styles for this template -->
   <link href="css/animate.css" rel="stylesheet">
@@ -33,7 +33,7 @@
 
 </head>
 
-<body id="page-top onload=getPublicationsAuthor('cecile-duchene');">
+<body id="page-top" onload="getPublicationsAuthor('cecile-duchene');">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <select class="selectpicker" data-width="fit">
@@ -58,13 +58,10 @@
           <a class="nav-link js-scroll-trigger lang-fr" href="#coordonnées">Présentation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger lang-en" href="#experience">Experience</a>
-          <a class="nav-link js-scroll-trigger lang-fr" href="#parcours professionnel">Parcours professionnel</a>
+          <a class="nav-link js-scroll-trigger lang-en" href="#education and experience">Education and experience</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#formation et parcours professionnel">Formation et parcours professionnel</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger lang-en" href="#education">Education</a>
-          <a class="nav-link js-scroll-trigger lang-fr" href="#formation">Formation</a>
-        </li>
+        <!--
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger lang-en" href="#research activities">Research Interests</a>
           <a class="nav-link js-scroll-trigger lang-fr" href="#activités de recherche">Sujets de recherche</a>
@@ -73,14 +70,17 @@
           <a class="nav-link js-scroll-trigger lang-en" href="#activités d_enseignement">Projects</a>
           <a class="nav-link js-scroll-trigger lang-fr" href="#projets">Projets</a>
         </li>
+      -->
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger lang-en" href="#publications">Publications</a>
           <a class="nav-link js-scroll-trigger lang-fr" href="#publications">Publications</a>
         </li>
+        <!--
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger lang-en" href="#other">Other research activities</a>
           <a class="nav-link js-scroll-trigger lang-fr" href="#other">Autres activités de recherche</a>
         </li>
+      -->
       </ul>
     </div>
   </nav>
@@ -128,204 +128,73 @@
 
     <hr class="m-0">
 
+    <!--
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="interest">
       <div class="w-100">
         <h2 class="mb-5 lang-en">Research Interests</h2>
         <h2 class="mb-5 lang-fr">Sujets de recherche</h2>
         <p>Under construction...</p>
-
-<!--
-
-        <hr class="star-dark mb-5">
-        <div class="row">
-          <article class="col-md-6 col-lg-4">
-								<div class="portfolio-item d-block mx-auto">
-									<img class="img-fluid" src="img/generalisation.png" alt="" />
-									<div class="portfolio-desc d-flex align-center position-absolute h-100 w-100">
-										<div class="folio-info my-auto w-100 text-center">
-											<a href="" class="fancybox"><i class="fas fa-search-plus fa-3x"></i></a>
-										</div>
-									</div>
-								</div>
-          </article>
-          <div class="col-md-6 col-lg-4">
-                <div class="portfolio-item d-block mx-auto">
-                  <img class="img-fluid" src="img/agents.png" alt="" />
-                  <div class="portfolio-desc align-center position-absolute h-100 w-100">
-                    <div class="folio-info w-100 text-center">
-                      <a href="" class="fancybox"><i class="fas fa-search-plus fa-3x"></i></a>
-                    </div>
-                  </div>
-                </div>
-          </div>
-          <article class="col-md-6 col-lg-4">
-                <div class="portfolio-item d-block mx-auto">
-                  <img class="img-fluid" src="img/vgi.png" alt="" />
-                  <div class="portfolio-desc d-flex align-center position-absolute h-100 w-100">
-                    <div class="folio-info my-auto w-100 text-center">
-                      <h5 class="lang-en">Volunteered Geographic Information</h5>
-                      <h5 class="lang-fr">Information géographique volontaire</h5>
-                    </div>
-                  </div>
-                </div>
-          </article>
-          <div class="col-md-6 col-lg-4">
-                <div class="portfolio-item d-block mx-auto">
-                  <img class="img-fluid" src="img/zoom.png" alt="" />
-                  <div class="portfolio-desc align-center position-absolute h-100 w-100">
-                    <div class="folio-info w-100 text-center">
-                      <h5 class="lang-en">Interactions in multi-scale maps</h5>
-                      <h5 class="lang-fr">Interactions dans les cartes multi-échelles</h5>
-                    </div>
-                  </div>
-                </div>
-          </div>
-          <article class="col-md-6 col-lg-4">
-                <div class="portfolio-item d-block mx-auto">
-                  <img class="img-fluid" src="img/lod.png" alt="" />
-                  <div class="portfolio-desc d-flex align-center position-absolute h-100 w-100">
-                    <div class="folio-info my-auto w-100 text-center">
-                      <h5 class="lang-en">Scale and LOD issues in geovisualization</h5>
-                      <h5 class="lang-fr">échelle et niveau de détail en géovisualisation</h5>
-                    </div>
-                  </div>
-                </div>
-          </article>
-          <div class="col-md-6 col-lg-4">
-                <div class="portfolio-item d-block mx-auto">
-                  <img class="img-fluid" src="img/auto_carto.png" alt="" />
-                  <div class="portfolio-desc align-center position-absolute h-100 w-100">
-                    <div class="folio-info w-100 text-center">
-                      <h5 class="lang-en">Automated cartography: text placement, schematization, conflation</h5>
-                      <h5 class="lang-fr">Cartographie automatique: placement de texte, schématisation, recalage géométrique</h5>
-                    </div>
-                  </div>
-                </div>
-          </div>
-        </div>
-      </div>
-    -->
     </section>
+  -->
+
+
+    <hr class="m-0 lang-en">
+
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center lang-en" id="education and experience">
+      <div class="w-100">
+        <h2 class="mb-5">Education and experience</h2>
+        <h3 class="mb-0">Education</h3>
+        <p>1994-1997: Engineering course in GI Science and Technology at Ecole Nationale des Science Géographiques (ENSG), France</p>
+        <p>1996-1997: Master of digital cartography, Université Paris I Panthéon-Sorbonne, France</p>
+        <p>2000-2004: PhD in Artificial Intelligence, Université Pierre et Marie Curie, Paris, France</p>
+        <p>   Title: <a href="http://recherche.ign.fr/labos/cogit/pdf/THESES/DUCHENE/These_Duchene_2004.pdf">Généralisation cartographique par agents communiquants: le modèle CartACom</a></p>
+        <p>2016: Habilitation, Université Paris-Est, France</p>
+        <p>   Title: <a href="http://recherche.ign.fr/labos/cogit/pdf/HDR/hdr-duchene-2016.pdf">Automatisation de la généralisation cartographique - Relations et interactions, orchestration et approches multi-agents</a></p>
+        <p> </p>
+        <h3 class="mb-0">Experience</h3>
+        <p>1997-2000: Research engineer, COGIT Laboratory, IGN, France. </p>
+        <p>   Main topic: automated cartographic generalisation</p>
+        <p>2000-2004: PhD student, COGIT Laboratory, IGN, France.</p>
+        <p>   Topic: automated cartographic generalisation with multi-agent systems</p>
+        <p>2005-2017: Researcher, COGIT Laboratory, IGN, France</p>
+        <p>   Topic: automated cartographic generalisation, multi-agent systems, qualitative spatial reasoning, knowledge representation</p>
+        <p>   2005-2013: Leader of the research group on automated generalisation</p>
+        <p>2018-: Lecturer and researcher, Ecole Nationale des Sciences Géographiques, LaSTIG Laboratory, MEIG Team </p>
+        <p>   Teaching: GIS, Spatial analysis, Cartography, Methodology of research</p>
+        <p>   Main research topics: semantic enhancement of vector geographic information, spatial reasoning, focus on spatial configurations and relations between geographical objets</p>
+        <p>   2018-2022: Member of ANR project <a href="http://choucas.ign.fr/">CHOUCAS</a></p>
+    </section>
+
+    <hr class="m-0 lang-fr">
+
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center lang-fr" id="formation et parcours professionnel">
+      <div class="w-100">
+        <h2 class="mb-5">Formation et parcours professionnel</h2>
+        <h3 class="mb-0 lang-fr">Formation</h3>
+        <p>1994-1997: Cycle ingénieur des Travaux Géographiques et Cartographiques de l'Etat à l'Ecole Nationale des Science Géographiques (ENSG), France</a></p>
+        <p>1996-1997: DESS de cartographie numérique, Université Paris I Panthéon-Sorbonne, France</p>
+        <p>2000-2004: Thèse en intelligence artificielle, Université Pierre et Marie Curie, Paris, France</p>
+        <p>   Titre: <a href="http://recherche.ign.fr/labos/cogit/pdf/THESES/DUCHENE/These_Duchene_2004.pdf">Généralisation cartographique par agents communiquants: le modèle CartACom</a></p>
+        <p>2016: Habilitation à diriger des recherches, Université Paris-Est, France</p>
+        <p>   Titre: <a href="http://recherche.ign.fr/labos/cogit/pdf/HDR/hdr-duchene-2016.pdf">Automatisation de la généralisation cartographique - Relations et interactions, orchestration et approches multi-agents</a></p>
+        <p> </p>
+        <h3 class="mb-0">Parcours professionnel</h3>
+        <p>1997-2000: Ingénieur d'études, Laboratoire COGIT, IGN, France: Sujet: automatisation de la généralisation cartographique</p>
+        <p>2000-2004: Doctorante, Laboratoire COGIT, IGN, France: Sujet: systèmes multi-agents pour l'automatisation de la généralisation cartographique</p>
+        <p>2005-2017: Chercheure, Laboratoire COGIT, IGN, France: Sujet: automatisation de la généralistiton cartographique, systèmes multi-agents, raisonnement spatial qualitatif, représentation des connaissances</p>
+        <p>   2005-2013: Resp. des recherches en automatisation de la généralisation</p>
+        <p>2018-: Enseignante-chercheure, Ecole Nationale des Sciences Géographiques, Laboratoire LaSTIG, équipe MEIG </p>
+        <p>   Enseignements: SIG, analyse spatiale, cartographie, BD spatiales, méthodes pour la recherche</p>
+        <p>   Sujets de recherche principaux: montée en sémantique de données géographiques vectorielles, raisonnement spatial qualitatif, représentation des connaissances</p>
+        <p>   2018-2022: Participation projet ANR <a href="http://choucas.ign.fr/">CHOUCAS</a></p>
+    </section>
+
 
     <hr class="m-0">
 
 
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-      <div class="w-100">
-        <h2 class="mb-5">Experience</h2>
-        <p>Under construction...</p>
-
-<!--
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Vice-head of LASTIG lab</h3>
-            <div class="subheading mb-3">LASTIG, IGN France</div>
-            <p>Description...</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2018 - Present</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Head of COGIT research team</h3>
-            <div class="subheading mb-3">LASTIG, IGN France</div>
-            <p>Description...</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">July 2017 - January 2019</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Senior researcher</h3>
-            <div class="subheading mb-3">COGIT, IGN France</div>
-            <p>Description...</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2011 - July 2017</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">PhD student</h3>
-            <div class="subheading mb-3">COGIT, IGN France</div>
-            <p>Description...</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">January 2008 - June 2011</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Research engineer</h3>
-            <div class="subheading mb-3">COGIT, IGN France</div>
-              <p>Description...</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2004 - December 2007</span>
-            </div>
-        </div>
-      </div>
-    -->
-
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-      <div class="w-100">
-        <h2 class="mb-5">Education</h2>
-        <p>Under construction...</p>
-
-<!--
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Université Paris-Est</h3>
-            <div class="subheading mb-3">Habilitation (HDR)</div>
-            <div>Geographical Information Science</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">May 2017</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Université Paris-Est</h3>
-            <div class="subheading mb-3">PhD in Geographical Information Science</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">January 2008 - June 2011</span>
-          </div>
-        </div>
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">ENSG</h3>
-            <div class="subheading mb-3">Engineering school</div>
-            <div>Geographical Information Science</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2001 - September 2004</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Université Paris-Est</h3>
-            <div class="subheading mb-3">Master in Geographical Information Science</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2003 - September 2004</span>
-          </div>
-        </div>
-      </div>
-    -->
     </section>
 
     <hr class="m-0">
@@ -333,9 +202,8 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="publications">
       <div class="w-100">
         <h2 class="mb-5">Publications</h2>
-        <p>Under construction...</p>
+        <p>The list below is automatically generated from my HAL profile, which is still incomplete. You can check <a href="https://www.researchgate.net/profile/Cecile-Duchene">my ResearchGate profile</a> as well.</p>
 
-<!--
         <span id="pubACL"><div class="subheading mb-3 mt-3">[ACL] Journals</div></span>
         <span id="pubACLN"><div class="subheading mb-3 mt-3">[ACLN] Journals</div></span>
         <span id="pubASCL"><div class="subheading mb-3 mt-3">[ASCL] Others</div></span>
@@ -349,70 +217,12 @@
         <span id="pubTH"><div class="subheading mb-3 mt-3">[TH] Dissertations</div></span>
         <span id="pubINV"><div class="subheading mb-3 mt-3">[INV] Invited Talks</div></span>
         <span id="pubPV"><div class="subheading mb-3 mt-3">[PV] Popularization</div></span>
-      -->
 
-        <!-- provide a subset of the publications based on a keyword -->
-        <!--
-        <span id="pubGeneralisation"><div class="subheading mb-3 mt-3">Généralisation</div></span>
-	<script> getKeywordPublicationsAuthorStartYear('guillaume-touya', 'Généralisation', 2006, "pubGeneralisation"); </script>
-        -->
       </div>
     </section>
 
-<!--
-    <section class="section appear clearfix p-3 p-lg-5">
-      <div class="w-100">
-        <h2 class="mb-5 mt-5">Invited Talks</h2>
-        <ol id="talks" class="sub">
-        </ol>
-      </div>
-    </section>
--->
-    <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
-      <div class="container">
-        <div class="row text-center title">
-          <h2>Projects</h2>
-        </div>
-        <p>Under construction...</p>
-
-<!--
-        <div class="subheading mb-3">On-going and past research projects</div>
-        <div class="row projects">
-          <div class="col-md-4">
-            <div class="project">
-              <div class="icon-holder">
-                <img src="img/icons/mapmuxing.png" alt="" class="icon">
-              </div>
-              <h4 class="heading">MapMuxing</h4>
-              <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="project">
-              <div class="icon-holder">
-                <img src="img/icons/activmap.png" alt="" class="icon">
-              </div>
-              <h4 class="heading">ACTIVmap</h4>
-              <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="project">
-              <div class="icon-holder">
-                <img src="img/icons/timemachine.jpg" alt="" class="icon">
-              </div>
-              <h4 class="heading">TimeMachine</h4>
-              <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cut cut-bottom"></div>
--->
-    </section>
-
+    <!--
     <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="other">
@@ -421,77 +231,8 @@
 
         <p>Under construction...</p>
 
-<!--
-        <div class="subheading mb-3">Software development</div>
-
-        <div class="row projects">
-          <div class="col-md-4">
-            <div class="project">
-              <div class="icon-holder">
-                <img src="img/icons/cartagen_logo.png" alt="" class="icon">
-              </div>
-              <h4 class="heading">CartAGen</h4>
-              <a class="description" href="https://github.com/IGNF/CartAGen">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="project">
-              <div class="icon-holder">
-                <img src="img/icons/Geoxygene-logo.png" alt="" class="icon">
-              </div>
-              <h4 class="heading">GeOxygene</h4>
-              <a class="description" href="https://github.com/IGNF/geoxygene">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="project">
-              <div class="icon-holder">
-                <img src="img/icons/logo_deepmapgen_small.png" alt="" class="icon">
-              </div>
-              <h4 class="heading">DeepMapGen</h4>
-              <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="subheading mb-3 mt-3">Teaching</div>
-
-        <div class="subheading mb-3 mt-3">Other research activities</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            <a href="https://generalisation.icaci.org/">Chair of the ICA commission on Map Generalisation and Multiple Representation</a> since Jul. 2017</li>
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            <a href="http://apvgi-magis.ign.fr/">Co-chair of the GDR MAGIS CNRS commission on crowdsourcing and VGI</a> since Jan. 2017</li>
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            Member of the scientific committee of the SAGEO conference series since 2017</li>
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            Regular reviewer of most important journals in GI science (IJGIS, CaGIS, JOSIS, IJC...)</li>
-        </ul>
-
-        <div class="subheading mb-3 mt-3">Supervisions</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check-square"></i>
-            Adrien Maudet (PhD, 2016), co-supervised with Cécile Duchêne (LASTIG) and Sébastien Picault (CRISTAL, Lille)</li>
-          <li>
-            <i class="fa-li fa fa-check-square"></i>
-            Marion Dumont (PhD, 2018), co-supervised with Cécile Duchêne (LASTIG)</li>
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            Quy Thy Truong (PhD), co-supervised with Cyril de Runz (CReSTIC, Reims)</li>
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            Sébastien Biniek (PhD), co-supervised with Gilles Rouffineau (ESAD Valence)</li>
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            Gauthier Filières-Riveau (PhD), co-supervised with Jean-Marie Favreau and Vincent Barra (LIMOS, Clermont-Ferrand)</li>
-        </ul>
--->
     </section>
+  -->
 
   </div>
 
