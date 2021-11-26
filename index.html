@@ -14,11 +14,11 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i">
   <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="vendor/academicons/css/academicons.min.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css"> -->
 
   <!-- Custom styles for this template -->
   <link href="css/animate.css" rel="stylesheet">
@@ -27,13 +27,13 @@
   <link href="css/extras.css" rel="stylesheet">
 
   <!-- scripts on load -->
-  <script src="vendor/d3/d3.min.js"></script>
-  <script src="js/reviewing.js" charset="utf-8"></script>
+  <!-- <script src="vendor/d3/d3.min.js"></script>
+  <script src="js/reviewing.js" charset="utf-8"></script> -->
   <script src="js/hal.js" charset="utf-8"></script>
 
 </head>
 
-<body id="page-top" onload="reviewingVis('reviewing.json'); getPublicationsAuthor('cecile-duchene');">
+<body id="page-top" onload=getPublicationsAuthor('cecile-duchene');">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <select class="selectpicker" data-width="fit">
@@ -55,27 +55,27 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger lang-en" href="#about">About</a>
-          <a class="nav-link js-scroll-trigger lang-fr" href="#about">Présentation</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger lang-en" href="#interest">Research Interests</a>
-          <a class="nav-link js-scroll-trigger lang-fr" href="#interest">Sujets de recherche</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#coordonnées">Présentation</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger lang-en" href="#experience">Experience</a>
-          <a class="nav-link js-scroll-trigger lang-fr" href="#experience">Parcours professionnel</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#parcours professionnel">Parcours professionnel</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger lang-en" href="#education">Education</a>
-          <a class="nav-link js-scroll-trigger lang-fr" href="#education">Formation</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#formation">Formation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#research activities">Research Interests</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#activités de recherche">Sujets de recherche</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#activités d_enseignement">Projects</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#projets">Projets</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger lang-en" href="#publications">Publications</a>
           <a class="nav-link js-scroll-trigger lang-fr" href="#publications">Publications</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger lang-en" href="#projects">Projects</a>
-          <a class="nav-link js-scroll-trigger lang-fr" href="#projects">Projets</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger lang-en" href="#other">Other research activities</a>
@@ -92,45 +92,36 @@
         <h1 class="mb-0">Cécile
           <span class="text-primary">Duchêne</span>
         </h1>
-        <div class="subheading mb-5">73 avenue de Paris · 94165 Saint-Mandé CEDEX · (+33)1 43 98 62 37 ·
-          <a>cec<!--anti@spam.fr!-->ile.duchene@ensg.fr, cec<!--anti@spam.fr!-->ile.duchene@ign.fr</a>
+        <div class="subheading mb-5">73 avenue de Paris · 94165 Saint-Mandé CEDEX · (+33) 1 43 98 85 43 ·
+          <p>6-8 avenue Blaise Pascal · Cité Descartes · Champs-sur-Marne · 77455 Marne la Vallée CEDEX 2 · (+33) 1 64 15 31 42
+          <p>cec<!--anti@spam.fr!-->ile.duchene@ensg.eu, cec<!--anti@spam.fr!-->ile.duchene@ign.fr
         </div>
-        <p class="lead mb-5 lang-en">Senior researcher and lecturer in GI Science.</p>
+        <p class="lead mb-5 lang-en">Lecturer and researcher in GIS, cartography, spatial analysis</p>
         <p class="lead mb-5 lang-en">Member of the <a href="">MEIG</a> research team</p>
-        <p class="lead mb-5 lang-fr">Enseignante-chercheure en sciences de l'information géographique.</p>
+        <p class="lead mb-5 lang-fr">Enseignante-chercheure SIG, cartogaphie, analyse spatiale</p>
         <p class="lead mb-5 lang-fr">Membre de l'équipe <a href="">MEIG</a></p>
 
-<!-- Réseaux sociaux et autres à modifier
+        <!-- Réseaux sociaux et autres à modifier -->
         <div class="social-icons">
-          <a href="#">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://www.researchgate.net/profile/Guillaume_Touya">
+          <a href="https://www.researchgate.net/profile/Cecile-Duchene">
             <i class="ai ai-researchgate"></i>
           </a>
-          <a href="https://github.com/gtouya">
+          <!-- <a href="https://github.com/gtouya">
             <i class="fab fa-github"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://scholar.google.fr/citations?user=Cbc_R2IAAAAJ">
+          </a> -->
+          <a href="https://scholar.google.fr/citations?hl=fr&user=E6N9ciEAAAAJ">
             <i class="ai ai-google-scholar"></i>
           </a>
-          <a href="#">
-            <i class="ai ai-publons"></i>
-          </a>
+          <!--A mettre à jour un jour avec mon OrcID si pertinent,
+            pour l'instant je n'ai aucune publi associée à lui apparemment
           <a href="#">
             <i class="ai ai-orcid"></i>
-          </a>
+          </a> -->
           <a href="#">
             <i class="ai"><img src="img/icons/hal-b2.svg" width=45px/></i>
           </a>
         </div>
-      -->
+
       </div>
     </section>
 
@@ -498,24 +489,6 @@
             <i class="fa-li fa fa-square"></i>
             Gauthier Filières-Riveau (PhD), co-supervised with Jean-Marie Favreau and Vincent Barra (LIMOS, Clermont-Ferrand)</li>
         </ul>
-
-        <div class="subheading mb-3 mt-3">Reviewing</div>
-        <div id="reviewings" class="sub">
-            <div id="revj">
-            </div>
-            <div id="revc">
-            </div>
-            <div id="revb">
-            </div>
-        </div>
-
-        <div class="subheading mb-3">Awards</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            2018 Henry Johns Award for the most outstanding paper published in 2017 in the Cartographic Journal</li>
-        </ul>
-      </div>
 -->
     </section>
 
